@@ -71,7 +71,7 @@ The Cricket Tournament Management System provides an efficient way to organize a
 ### Backend Setup (Spring Boot)
 1. Clone the repository.
     ```bash
-    git clone https://github.com/your-repo/cricket-tournament-management.git
+   https://github.com/suhas5324/Cricket-Tournament.git
     ```
 2. Navigate to the backend project directory.
     ```bash
