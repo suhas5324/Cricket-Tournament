@@ -67,9 +67,8 @@ export default function Addmatch() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        // Add your form submission logic here, e.g., sending data to an API
         await axios.post("http://localhost:8080/match",match)
-        navigate("/match");//to navigate to home after submitting
+        navigate("/match");
     };
 
     return (

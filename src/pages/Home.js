@@ -6,7 +6,7 @@ export default function Home() {
     <div className="container text-center mt-5">
       <h1>Welcome to the Cricket Tournament</h1>
       <img
-        src="image.png" // Replace with the actual image URL or path
+        src="image.png" 
         alt="Cricket Tournament"
         className="img-fluid mt-4"
       />

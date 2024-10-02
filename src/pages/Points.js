@@ -64,9 +64,9 @@ export default function Points() {
           </tbody>
         </table>
         </div>
-        {role === 'admin' && (  // Show Add Match button only for admin
+        {role === 'admin' && ( 
         <div className="container">
-          <Link className='btn btn-outline-primary mx-2' to="/addmatch">Add Team Points</Link>
+          <Link className='btn btn-outline-primary mx-2' to="/addpoints">Add Team Points</Link>
         </div>
       )}
       </div>
