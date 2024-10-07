@@ -64,9 +64,9 @@ export default function Player() {
           </tbody>
         </table>
         </div>
-        {role === 'admin' && (  // Show Add Match button only for admin
+        {role === 'admin' && (  
         <div className="container">
-          <Link className='btn btn-outline-primary mx-2' to="/addmatch">Add Player</Link>
+          <Link className='btn btn-outline-primary mx-2' to="/addplayer">Add Player</Link>
         </div>
       )}
       </div>

@@ -20,9 +20,9 @@ export default function Addpoints() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        // Add your form submission logic here, e.g., sending data to an API
+      
         await axios.post("http://localhost:8080/points",points)
-        navigate("/points");//to navigate to home after submitting
+        navigate("/points");
     };
 
     return (

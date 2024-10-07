@@ -20,9 +20,8 @@ export default function Addresult() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        // Add your form submission logic here, e.g., sending data to an API
         await axios.post("http://localhost:8080/result",result)
-        navigate("/result");//to navigate to home after submitting
+        navigate("/result");
     };
 
     return (

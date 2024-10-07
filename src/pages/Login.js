@@ -1,70 +1,4 @@
 
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-
-// function Login() {
-//   const [username, setUsername] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [role,setRole] = useState('user');
-//   const navigate = useNavigate();
-
-//   const handleLogin = (e) => {
-//     e.preventDefault();
-
-//     if (username === 'admin' && password === 'admin' && role === 'admin') {
-//       localStorage.setItem('auth', 'true');
-//       localStorage.setItem('role', 'admin');  // Store admin role
-//       navigate('/');  // Redirect to the Match page
-//     } else if (role === 'user') {
-//       localStorage.setItem('auth', 'true');
-//       localStorage.setItem('role', 'user');  // Store user role
-//       navigate('/');  // Redirect to the Match page
-//     } else {
-//       alert('Invalid credentials');
-//     }
-//   };
-
-//   return (
-//     <div className="container">
-//       <h2>Admin Login</h2>
-//       <form onSubmit={handleLogin}>
-//         <div className="form-group">
-//           <label>Username</label>
-//           <input
-//             type="text"
-//             className="form-control"
-//             value={username}
-//             onChange={(e) => setUsername(e.target.value)}
-//             required
-//           />
-//         </div>
-//         <div className="form-group">
-//           <label>Password</label>
-//           <input
-//             type="password"
-//             className="form-control"
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//             required
-//           />
-//         </div>
-//         <div className="form-group">
-//           <label>Select Role</label>
-//           <select
-//             className="form-control"
-//             value={role}
-//             onChange={(e) => setRole(e.target.value)}
-//           >
-//             <option value="user">User</option>
-//             <option value="admin">Admin</option>
-//           </select>
-//         </div>
-//         <button type="submit" className="btn btn-primary">Login</button>
-//       </form>
-//     </div>
-//   );
-// }
-//  export default Login;
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -80,23 +14,22 @@ function Login() {
 
     if (username === 'admin@gmail.com' && password === 'admin' && role === 'admin') {
       localStorage.setItem('auth', 'true');
-      localStorage.setItem('role', 'admin');  // Store admin role
-      navigate('/');  // Redirect to the Match page
+      localStorage.setItem('role', 'admin');
+      navigate('/');  
     } else if (role === 'user') {
       localStorage.setItem('auth', 'true');
-      localStorage.setItem('role', 'user');  // Store user role
-      navigate('/');  // Redirect to the Match page
+      localStorage.setItem('role', 'user');  
+      navigate('/');  
     } else {
       alert('Invalid credentials');
     }
   };
   const handleUserLogin = () => {
     localStorage.setItem('auth', 'true');
-    localStorage.setItem('role', 'user');  // Store user role
-    navigate('/');  // Redirect to the Match page
+    localStorage.setItem('role', 'user');  
+    navigate('/');  
   };
   return (
- /* From Uiverse.io by mobinkakei */ 
  <form onSubmit={handleLogin}>
 <div
   class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
@@ -148,6 +81,3 @@ function Login() {
 }
  export default Login;
 
-//  data-ripple-light="true"
-//       type="button"
-//       class="block w-full select-none rounded-lg bg-gradient-to-tr from-cyan-600 to-cyan-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-cyan-500/20 transition-all hover:shadow-lg hover:shadow-cyan-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"

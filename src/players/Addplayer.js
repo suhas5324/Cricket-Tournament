@@ -21,9 +21,9 @@ export default function Addplayer() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        // Add your form submission logic here, e.g., sending data to an API
+        
         await axios.post("http://localhost:8080/player",player)
-        navigate("/player");//to navigate to home after submitting
+        navigate("/player");
     };
 
     return (

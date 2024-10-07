@@ -64,9 +64,9 @@ export default function Result() {
           </tbody>
         </table>
         </div>
-        {role === 'admin' && (  // Show Add Match button only for admin
+        {role === 'admin' && (  
         <div className="container">
-          <Link className='btn btn-outline-primary mx-2' to="/addmatch">Add Match</Link>
+          <Link className='btn btn-outline-primary mx-2' to="/addresult">Add Match</Link>
         </div>
       )}
       </div>

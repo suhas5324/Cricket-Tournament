@@ -20,9 +20,8 @@ export default function Addteam() {
 
     const onSubmit =async (e) => {
         e.preventDefault();
-        // Add your form submission logic here, e.g., sending data to an API
         await axios.post("http://localhost:8080/team",team)
-        navigate("/team");//to navigate to home after submitting
+        navigate("/team");
     };
 
     return (
