@@ -66,7 +66,7 @@ export default function Result() {
         </div>
         {role === 'admin' && (  
         <div className="container">
-          <Link className='btn btn-outline-primary mx-2' to="/addresult">Add Match</Link>
+          <Link className='btn btn-outline-primary mx-2' to="/addresult">Add Result</Link>
         </div>
       )}
       </div>
